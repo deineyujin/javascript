@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else 조건문</title>
+    <script>
+        const score = Number(prompt('점수를 입력하세요')) 
+        // Number로 else if안의 score를 감싸는 것보다, const score를 처음에 감싸는 것이 효율적임
+        // alert('점수를 입력하세요')
+        //90<=score<100으로 적으면 90과 스코어를 비교한 후 100과 비교함
+        console.log(score>90)
+        if(score===100){alert('A++입니다.')}
+        if(90<=score&&score<100){alert('A입니다.')}
+        if(80<=score&&score<90){alert('B입니다.')}
+        if(70<=score&&score<80){alert('C입니다.')}
+        if(60<=score&&score<70){alert('D입니다.')}
+        if(score&&score<60){alert('F입니다.')}
+
+
+        
+
+    </script>
+</head>
+<body>
+    
+
+
+
+</body>
+</html>
