@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- 국어점수, 수학점수, 과학점수를 입력받는다 -->
+<!-- 그리고 세 과목의 평균점수를 출력한다 -->
+<!-- 추가로 국어점수가 70점 이상이고 수학점수가 50점초과이며 과학점수가 80점 이상이면 화면에 TRUE를 표시한다 -->
+<!-- 웹페이지에 추천. 점수가 안되면 FALSE를 표시한다  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        table{
+            font-style: italic;
+            width: 300px; height: 200px;
+            border: 1px solid wheat;}
+            td,tr{
+            background-color: rosybrown;
+            width: 200px; height: 100px;
+            border: 2px solid wheat;}
+        input{
+            margin: 0 auto;
+        }
+        th{
+            margin: 0,auto;
+            color: antiquewhite;
+            font-size: smaller;
+        }
+
+    </style>
+    <script>
+const ks = prompt('국어점수를 입력하세요')*1
+const ms = prompt('수학점수를 입력하세요')*1
+const ss = prompt('과학점수를 입력하세요')*1
+const avg = (ks+ms+ss)/3
+// const (ks>=70),(ms >50),(ss>=80) 
+console.log(avg)
+alert(avg)
+let list = ""
+list+=`<table> 과목별 점수`
+list+=`<tr>`
+list+=`<th>국어</th>`
+list+=`<td>${ks}</td>`
+list+=`</tr>`
+list+=`<tr>`
+list+=`<th>수학</th>`
+list+=`<td>${ms}</td>`
+list+=`</tr>`
+list+=`<th>과학</th>`
+list+=`<td>${ss}</td>`
+list+=`</tr>`
+list+=`</tr>`
+list+=`<th>평균</th>`
+list+=`<td>${avg}</td>`
+list+=`</tr>`
+list+=`</table>`
+document.write(list)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

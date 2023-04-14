@@ -1,0 +1,25 @@
+<!-- 반지름을 입력받아/ 원의 둘레, 넓이구하는 /사이트만들기 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반지름</title>
+    <script>   
+        const size = prompt('반지름을 입력해주세요','1')
+        const r = Number(size)
+        const pi =3.14
+        const a1 = r * 2 * pi
+        const a2 = r * r * pi
+        console.log(`계산하실 ${r}의 둘레는 ${a1}cm 입니다.`)
+        console.log(`계산하실 ${r}의 넓이는 ${a2}cm 입니다.`)
+        document.write(`<h4>입력하신 값은 : ${r} 계산하면 ${a1}cm 입니다.<h4>`)
+        document.write(`<h4>입력하신 값은 : ${r} 계산하면 ${a2}cm 입니다.<h4>`)
+        </script>
+
+</head>
+<body>
+    
+</body>
+</html>

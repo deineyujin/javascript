@@ -1,0 +1,5 @@
+table{border: 2px solid black;}
+tr,th{
+    background-color: aquamarine;
+}
+/* body{display: inline;} */
