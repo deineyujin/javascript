@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>확률게임</title>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js"> </script>
+    <!-- dayjs()에서 get('ms')
+    확인(true)과 취소(false) 중 하나를 선택하기
+    당신이 이겼습니다. 승리를 축하합니다. 랜덤숫자값 : ???
+    당신이 졌습니다. 
+    조건 0 : true or false로 confirm 사용하기
+    조건 1 : % 사용하기 : 나눈 후 나머지
+    조건 2 : if 사용하기
+    -->
+    <script>
+        const now = dayjs()
+        let random = now.get('ms')
+        console.log(random)
+        input = confirm('true면 확인, false는 취소를 눌러주세요')
+        alert(input)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
