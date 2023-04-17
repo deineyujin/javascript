@@ -8,7 +8,7 @@
    
     <script>
     //for(let i=0; i<25; i++){console.log(`${i*2}는 짝수의 나열입니다`)}//;let절에 2i를 넣으면 0부터 시작하는경우 값이 0만나옴, 따라서 {}칸에 넣는게 나음!
-    for(let i=0; i<=24; i++){console.log(`%c${2*i+1}는 홀수입니다.`,"border:3px solid darkgrey;font-size:10px;")} //%c는 앞의 요소에 붙어야함
+    for(let i=0; i<=24; i++){if(i%2==0)console.log(`%c${2*i+1}는 홀수입니다.`,"border:3px solid darkgrey;font-size:10px;")} //%c는 앞의 요소에 붙어야함
     for(let i=0; i<=25; i++){console.log(`%c${2*i}는 짝수입니다.`,"border:3px solid darkgrey;font-size:10px;")} 
     
     </script>
