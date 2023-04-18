@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤아이템</title>
+    <script>
+     //const ran = Math.floor(Math.random()*100)
+     //소수점만 떼고 표시
+    const ran = Math.floor(Math.random()*100)
+    console.log(ran)
+    if(ran>=10){console.log('%c일반아이템.',"border:1px solid darkgrey;font-size:20px; background-color:darkgrey;")}
+    else if(ran>=5 && ran<10){console.log('%c레어템.',"border:1px solid yellow;font-size:20px;background-color:yellow;")}
+    else if(ran>=2 && ran<5){console.log('%c유니크 아이템.',"border:1px solid green;font-size:20px;background-color:green;")}
+    else if(ran<2){console.log('%c레전드아이템.',"border:1px solid gold;font-size:20px;background-color:gold;")}
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
