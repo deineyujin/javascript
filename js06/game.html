@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>눈치게임</title>
+    <script>
+        for(i=0;i<=5;i++){
+        let r=(Math.round((Math.random()*100)))
+        const n=prompt('임의의 숫자를 입력하세요'+r)
+        if(n<r){
+            alert(`더 큰 숫자입니다.`)} 
+            else if (n>r){
+                alert(`더 작은 숫자입니다.`)} 
+                else if(n=r(alert(`정답입니다. 축하합니다.`))){break;}
+                if(i===4){alert(`게임오버`)}
+            }
+                
+    </script>s
+</head>
+<body>
+    
+</body>
+</html>

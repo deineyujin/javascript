@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>falsely,Nullish</title>
+    <script>
+        const a1 = null
+        const a2 = undefined
+        const a3 = false
+        const a4 = '1234'
+
+        console.log(a1||0)  //NULL이나 Undefined로 받지않고 0값으로 받고싶을때. 
+        console.log(a2||0)
+        console.log(a3||0)
+        console.log(a4||0)
+
+        console.log(a1??'이값아니야아')  //새로나온 문법으로, NULL과 Undefined에게만 반응함 . 앞의값이 NULL이라면 뒤의값을 보여줌.or은 앞이 T일경우 뒤도 T 
+        console.log(a2??0)
+        console.log(a3??0)
+        console.log(a4??0)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
