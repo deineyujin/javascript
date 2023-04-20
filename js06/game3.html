@@ -4,16 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>주사위</title>
-<!-- 주사위를 십만번 던져서 1에서 6까지 몇번나오는지 기록한 후 통계를 내어라.검증을하여라
-if(ran==1)ct1++
-랜덤을돌려야댐.............for도 써야댐.................................
--->
-<script>
+    <title>Document</title>
+ <style>
+
+    table{
+        border: 4px; color:navajowhite; background-color: sienna;
+    }
+ </style>
     
-</script>
+    <script>
+     const dice = 100000;
+     let d1=d2=d3=d4=d5=d6=0
+     let a=0
+        
+        for (let i=0;i<10000;i++){
+            let random=Math.floor(Math.random()*6+1)
+            if(random==1){d1++} //dice=dice+1
+            if(random==2){d2++} // dice[1]++
+            if(random==3){d3++}
+            if(random==4){d4++}
+            if(random==5){d5++}
+            if(random==6){d6++}
+        }
+
+        console.log(d1)
+        console.log(d2)
+        console.log(d3)
+        console.log(d4)
+        console.log(d5)
+        console.log(d6)
+        console.log('%c총합=+(d1+d2+d3+d4+d5+d6)','color:red')
+
+
+        // const dice = [0,0,0,0,0,0]
+        // for(let i =0;i<10000;i++)
+        // {const array=new Uint8Array}
+        // crypto.getRandomValues(array);
+        // const ran=array[0]%6+1
+        // dice[ran-1]++
+        // for (const n of dice)(dice[6]+=n)
+        // dice[6]
+        // console.log(dice)
+
+
+        </script>
 </head>
 <body>
-    
+<table>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+</table>
 </body>
 </html>
