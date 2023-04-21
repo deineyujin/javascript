@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .body{
+            display: flex;
+            justify-content: ;
+        } */
+        table{
+           width: 500px;
+           height: 88px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr,td{
+            border: 1px solid black;
+        }
+        .p{
+            border: 1px solid black;
+            background-color: white;
+            height: 20px;
+            text-align: center;
+            font-size: smaller;
+
+        }
+        .y{
+            background-color: white;
+            height: auto;
+        }
+        
+        
+    </style>
+    <script>
+        let p = prompt(`현재 온도를 입력하세요`)
+        let h=('a','b','c','d','e'
+        )
+        //let p=22
+        if(p<16){console.log(`지금 온도는 ${p}이며, 정상온도를 벗어났습니다`)}
+        else if(16<=p && p<22){console.log(`지금 온도는 ${p}이며, 시원하네요`)} // {||}으로 이어지는 축약형? 
+        else if(22<=p && p<28){console.log(`지금 온도는 ${p}이고, 보통입니다.`)}
+        else if(28<=p && p<32){console.log(`지금 온도는 ${p}이며, 갑갑합니다.`)}
+        else (p>32);{console.log(`지금 온도는 ${p}이며, 정상온도를 벗어났습니다`)}
+        document.write(`지금 온도는 ${p}이며, `)
+    </script>
+</head>
+<body>
+<table>
+    <tr class="p"> 
+        <td colspan="6">16미만 </td>
+        <td colspan="4">16이상~22미만</td>
+        <td colspan="4">22이상~28미만</td>
+        <td colspan="3">28이상~32미만</td>
+        <td colspan="6">32~이상</td>
+      
+    </tr>
+    <tr class="b">
+        <td style="background-color: purple;"></td>
+        <td style="background-color: purple;"></td>
+        <td style="background-color: purple;"></td>
+        <td style="background-color: purple;"></td>
+        <td style="background-color: purple;"></td>
+        <td style="background-color: purple;"></td>
+        <td style="background-color: blue;"></td>
+        <td style="background-color: blue;"></td>
+        <td style="background-color: blue;"></td>
+        <td style="background-color: blue;"></td>
+        <td style="background-color: yellow;"></td>
+        <td style="background-color: yellow;"></td>
+        <td style="background-color: yellow;"></td>
+        <td style="background-color: yellow;"></td>
+        <td style="background-color: beige;"></td>
+        <td style="background-color: beige;"></td>
+        <td style="background-color: beige;"></td>
+        <td style="background-color: red;"></td>
+        <td style="background-color: red;"></td>
+        <td style="background-color: red;"></td>
+        <td style="background-color: red;"></td>
+        <td style="background-color: red;"></td>
+        <td style="background-color: red;"></td>
+    </tr>
+    <tr class="y">
+        <td colspan="6"></td>
+        <td colspan="4"></td>
+        <td colspan="4"></td>
+        <td colspan="3"></td>
+        <td colspan="6"></td>
+    </tr>
+ 
+
+</table>
+    
+    <!-- <div id="wrapper">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div>
+        <div class="box">17</div>
+        <div class="box">18</div>
+        <div class="box">19</div>
+        <div class="box">20</div>
+        <div class="box">21</div>
+        <div class="box">22</div>
+        <div class="box">23</div>
+    </div> -->
+</body>
+</html>
