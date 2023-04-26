@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1부터45까지 임의의 수 6자리를 중복없이 뽑아 차례로 나열하여 배열에 그 값을 넣으시오
+        // 위의 배열을 10000개 준비하여 / 각 번호별로 나온 수를 카운팅하기     
+        function lotto(){
+        const arr = []
+        while(arr.length<6){ //조건이 트루가 되면 작동
+        const ran = Math.floor(Math.random()*45+1)
+        if(!arr.includes(ran))arr.push(ran) //
+        arr.sort((a,b)=>(a-b))} //console로 출력하면 sort가 반복되면서 누적되는 값이 출력됨
+        //arr.push(ran) //어레이에 차곡차곡 값을 넣음
+        console.log(arr)
+        let cnt=0;
+        for(let i=0; i<arr.length; i++){
+            if arr[i]==arr.length[0]
+            console.log(${cnt})
+        }
+
+        }
+    for(let i=0;i<10000;i++){
+    console.log(i+1)
+    lotto() 
+    }
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+
+<!-- 
+if(숫자 포함?-인덱스랑 숫자 대응-){콘솔에 개수 표시-자릿수마다 숫자의 유무를 표시?includes사용????} -->
+
+<!-- 인덱스 : 순서에 대응하는 요소에 접근
+        ??    : 각 순서당 제시된 숫자들의 개수 카운트
+    includes: 
+ -->

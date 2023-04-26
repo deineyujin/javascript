@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할인율</title>
+    <style>
+table{
+    
+
+}
+tr,td{
+    
+    
+}
+
+    </style>
+    <script>
+    const arr=['컴퓨터','노트북','태블릿','스마트폰','공유기','키보드','마우스']
+    const won=[800000,2200000,800000,2000000,120000,80000,50000]
+    function per(){
+        let list=""
+        list+=`<table style="border-collapse: collapse;"><tr style="border: 1px solid black;"><th>판매품목</th></tr><tr style="border: 1px solid black;"><td>No</td><td style="border: 1px solid black;">품목</td><td style="border: 1px solid black;">정가</td><td>할인율</td></tr>`
+
+        for(let i=1; i<8; i++){
+        list+=`<tr style="border: 1px solid black;"><td style="border: 1px solid black;">${i}</td><td style="border: 1px solid black;">${arr[i-1]}</td><td style="border: 1px solid black;">${won[i-1]}</td><td style="border: 1px solid black;">${won[i-1]*0.9}</td></tr>`}
+        document.write(list)
+        }
+    </script>
+</head>
+
+<body>
+<button onclick="per()">할인 10%</button>
+    
+</body>
+</html>

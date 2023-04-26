@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 중복제거</title>
+    <script>
+        function lotto(){
+        const arr = []
+        while(arr.length<6){ //조건이 트루가 되면 작동
+        const ran = Math.floor(Math.random()*45+1)
+        if(!arr.includes(ran))arr.push(ran)   //
+        console.log(arr.sort((a,b)=>(a-b)))
+        //arr.push(ran) //어레이에 차곡차곡 값을 넣음
+        }
+        console.log(arr)
+    }
+    for(let i=0;i<100;i++){}
+    console.log(i+1)
+    lotto() //함수설정 후 실행하려면 함수이름(). 값이 아니기때문에 let ??=lotto()가 될 수 없음
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

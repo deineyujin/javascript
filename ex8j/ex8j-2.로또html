@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        위에서 뽑은 세가지의 수를 본인이 만든 알고리즘으로 번호를 오름차순 순서대로 나열하여라
+        반복문, 제어문, 배열
+
+        (1)
+        1-45 무작위 수 중에 세개를 뽑아 배열에 넣기
+        중복이 되지않게하기
+        오름차순으로 정렬
+     -->
+     <!-- <script>
+        const arr = []
+
+        for(i=0;i<3;i++){
+            const ran=Math.floor(Math.random()*45)+1
+            arr.push(ran)}
+        let temp
+        if(arr[0]>arr[1]){
+            temp=arr[0]
+            arr[0]=arr[1]
+            arr[1]=temp   }               
+         if(arr[1]>arr[2]){
+            temp=arr[1]
+            arr[1]=arr[2]
+            arr[2]=temp                  
+         }
+         console.log(arr) -->
+<!-- //중복값 제거하기 : continue 사용 -->
+<!-- <script>
+        const arr = []
+        for(i=0;i<3;i++){
+            const ran=Math.floor(Math.random()*45)+1
+            arr.push(ran)
+            if(arr[0]==arr[1]||arr[0]==arr[2]||arr[1]==arr[2]){
+            continue;
+        }
+        }
+        console.log(arr)
+
+        let temp
+        for(let k = 0;k<100000;k++){
+        if(arr[0] < arr[1] && arr[1] < arr[2])break//이때는 일반적인 배열이므로 조건문을 적용하지 않는다:break사용
+        else if(arr[0]>arr[1]){
+            temp=arr[0]
+            arr[0]=arr[1]
+            arr[1]=temp   }               
+        else if(arr[1]>arr[2]){
+            temp=arr[1]
+            arr[1]=arr[2]
+            arr[2]=temp                  
+         } 
+        }
+        console.log(arr) 
+    </script>
+    -->
+
+<!-- 팁 : arr.indexOf(????)내용이 있을 때 해당하는 인덱스 반환, 없을 때 -1반환 
+(2)
+1-45 무작위 수 중에 여섯개를 뽑아 배열에 넣기 
+중복이 되지않게하기
+오름차순으로 정렬
+-->
+<!-- <script>
+    const arr = []    
+    for(i=0;i<6;i++){
+        const ran=Math.floor(Math.random()*45)+1
+        arr.push(ran)
+    if(arr[n-1]==arr[n]){
+        continue;
+    }
+    }
+    console.log(arr)
+
+    let temp
+    for(let k = 0;k<100000;k++){
+    if(arr[0] < arr[1] && arr[1] < arr[2])break  
+    else if(arr[0]>arr[1]){
+        temp=arr[0]
+        arr[0]=arr[1]
+        arr[1]=temp   }               
+    else if(arr[1]>arr[2]){
+        temp=arr[1]
+        arr[1]=arr[2]
+        arr[2]=temp                  
+     } 
+    }
+    console.log(arr)
+
+</script> -->
+
+
+
+
+<!--     
+        //  if(arr[1]>arr[2]){
+        //     temp=arr[1]
+        //     arr[1]=arr[2]
+        //     arr[2]=temp                   
+        //  }
+        //  if(arr[2]>arr[1]){
+        //     temp=arr[2]
+        //     arr[2]=arr[1]
+        //     arr[1]=temp                   
+        //  }
+
+
+        // const arr=[]
+        // for(let i=0;i<3;i++) {//값을 비교하는걸 무한으로 돌림
+        //     const ran=Math.floor(Math.random()*45)+1
+        //     if(arr[0]<=arr[1]&&arr[1]<=arr[2])
+        //  if(arr[0]>arr[1]){
+        //     [arr[0],arr[1],arr[2]]=arr[1],arr[0],arr[2]                  //temp:값을 잠시 보관함.
+        //  }
+        //  if(arr[0]>arr[1]){
+        //     [arr[0],arr[1],arr[2]]=arr[0],arr[2],arr[1]                  
+        //     arr.push(ran)
+        //  }}
+        //  console.log(arr)
+        -->
+        
+<!--        
+       
+    //1번풀이 
+    //     if(arr.length-2>arr.length-1){arr=['arr.length-1','arr.leng-2']}
+    // else if(arr.length-2<=arr.length-1){arr=['arr.length-2','arr.leng-1']}
+    // else if(arr.length-2>arr.length){arr=['arr.length','arr.length-2']}
+    // else if(arr.length-2<=arr.length){arr=['arr.length-2','arr.length']}
+    // else if(arr.length-1>arr.length){arr=['arr.length','arr.leng-1']}
+    // else if(arr.length-1<=arr.length)(arr=['arr.length-1','arr.length'])
+    
+    //2번풀이
+    //-2
+//     if(arr.length-2<arr.length-1<arr.length){arr='arr.length-2','arr.length-1','arr.length'}
+//     else if(arr.length-2<arr.length<arr.length-1){arr='arr.length-2','arr.length','arr.length'}
+//     else if(arr.length-1<arr.length<arr.length-2){arr='arr.length-1','arr.length','arr.length-2'}
+//     else if(arr.length<arr.length-1<arr.length-2){arr='arr.length','arr.length-1','arr.length-2'}
+//     else if(arr.length<arr.length-2<arr.length-1){arr='arr.length','arr.length-2','arr.length-1'}
+//     else (arr.length-1<arr.length-2<arr.length)(arr='arr.length-1','arr.length-2','arr.length')
+// //th
+//     if(arr.length<arr.length-2<arr.length-1){arr='arr.length','arr.length-2','arr.length-1'}
+//     else if(arr.length<arr.length-1<arr.length-2){arr='arr.length','arr.length-1','arr.length-2'}
+//     else if(arr.length-1<arr.length-2<arr.length){arr='arr.length-1','arr.length-2','arr.length'}
+//     else if(arr.length-2<arr.length-1<arr.length){arr='arr.length-2','arr.length-1','arr.length'}
+//     else if(arr.length-1<arr.length<arr.length-2){arr='arr.length-1','arr.length','arr.length-2'}
+//     else (arr.length-2<arr.length<arr.length-1)(arr='arr.length-2','arr.length','arr.length-1')
+//     //-1
+//     if(arr.length-2<arr.length<arr.length-1){arr='arr.length-2','arr.length','arr.length-1'}
+//     if(arr.length<arr.length-2<arr.length-1){arr='arr.length','arr.length-2','arr.length-1'}
+//     if(arr.length-1<arr.length<arr.length-2){arr='arr.length-1','arr.length','arr.length-2'}
+//     if(arr.length-1<arr.length-2<arr.length){arr='arr.length-1','arr.length-2','arr.length'}
+//     if(arr.length<arr.length-1<arr.length-2){arr='arr.length-1','arr.length-2','arr.length'}
+//     if(arr.length-2<arr.length-1<arr.length){arr='arr.length-2','arr.length-1','arr.length'}
+//힌트
+
+
+    </script> -->
+</head>
+<body>
+    
+</body>
+</html>
