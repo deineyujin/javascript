@@ -10,16 +10,21 @@
 function(1,6)=1+2+3+---+6->6!
 -->
     <script>
-function total(a,b){
-    //a+(a+1)+(a+2)+(a+3)+(a+(b-a))=b!
-    //팩토리얼->있음???
-    for(let i=a; i<b; i++){
-     a+b    
-    }
-    return 
-   if  
+        function toral(a,b){
+
+let output = 0
+for(let i=a;i<=b;i++){
+    output+=i
 }
-console.log(1+2+3+4+5+6+7+8+9+10)
+if(Boolean(a)==false && Boolean(b)== false){
+    for(let j=1;j<=10;j++){
+        output+=j
+    }
+}
+return output
+}
+console.log(toral(2,10)) // 54
+console.log(toral()) // 55
 //if(total==NaN){
 
 

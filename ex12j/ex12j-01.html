@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 매개변수 4개를 넣었을때 그중 가장 작은수를 리턴할 것 -->
+</head>
+<script>
+//   //최솟값 구하기
+// function min(a, b, c, d) {
+//   let a1 = 0
+//   const arr = [a, b, c, d];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] < a1) {
+//       a1 = arr[i];
+//     }
+//   }
+//   return a1;
+// }
+
+// console.log(min(2, -1, 7, 3));
+
+// //최댓값
+
+// function max(a, b, c, d) {
+//   let a1 = 0
+//   const arr = [a, b, c, d];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > a1) {
+//       a1 = arr[i];
+//     }
+//   }
+//   return a1;
+// }
+
+// console.log(max(2, -1, 7, 3));
+
+
+//최솟값구하기 2
+const a =[44,66,0,-11,-22,88]  //토너먼트형식으로 한 값만 다른값에 계속 넘겨가며 비교
+function min(a){
+  let vs=a[0]
+  for(let i=0;i<a.length;i++)
+    if(vs > a[i]){
+      vs=a[i]
+      return vs
+    
+  }
+  console.log(min(a))
+}
+</script>
+<body>
+    
+</body>
+</html>
