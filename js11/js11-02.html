@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 파라미터, 리턴</title>
+    <script>
+        function fn(num){ //초기값일때 fn안에 num=123입력
+            return num    
+        }
+        console.log(fn(333))
+        const arr=[11,22,33,44,55,fn(222),fn(444)]
+        //return은 값을 전달하고 함수가 종료됨
+        console.log('arr',arr)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
