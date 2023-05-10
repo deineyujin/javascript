@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제 1</title>
+    <style>
+        .box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+    border-radius: 20px;
+    background-color: antiquewhite;
+    width: 400px; 
+    height: 100px;
+    border: 5px solid black;
+    }
+    .red{
+        background-color: red;
+        width: 80px;
+        height: 80px;
+        border: 5px solid black; 
+        border-radius: 100%;
+        margin: 10px 20px 10px 10px;
+    }
+    .yellow{
+        background-color: yellow;
+        width: 80px;
+        height: 80px;
+        border: 5px solid black; 
+        border-radius: 100%;
+        margin: 10px 20px 10px 10px;
+    }
+    .green{
+        background-color: green;
+        width: 80px;
+        height: 80px;
+        border: 5px solid black; 
+        border-radius: 100%;
+        margin: 10px 20px 10px 10px;
+    }
+        </style>
+    
+     <!-- 팝업창에 사용자로부터 n 입력받은 뒤 / 1부터 n까지 0.5초 간격으로 웹에 숫자가 1씩 상승하고 정지하는 웹페이지
+    붉은색 원(1초 켜짐) 흰색원 (0.5초 꺼져있음)이 10회 반복되는 램프를 표현한 웹페이지를 만들어라 -->
+
+    <script>
+    const nInput = prompt('몇 번째까지 상승할까요?',6)*1
+    const tInput = prompt('몇 초 간격으로 상승할까요?',1)*1
+    // 입력안하면 1초로 설정됨 / 문자로 취급되므로 1을 곱함
+    let ct=0
+    const tid=setInterval(()=>{document.close();document.write(`${++ct}초 입니다.`)},tInput*1000)
+    setTimeout(()=>{
+        clearInterval(tid)
+        document.write(`<h1 style="color:rosybrown">목표값이 ${ct}이 되었습니다!!!</h1>`)
+    },nInput*1000)//timeout을 끄는 것
+
+    </script>
+    
+</head>
+<body>
+    <div class="box">
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+</div>
+</body>
+</html>

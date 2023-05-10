@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const arr=Array(30).fill(0).map((v,i) => v=i+1)
+        arr1=arr.map(function(v,i,a){
+            if(0<=i && i<=10){
+                return v
+            }
+            if(11<=i && i<=20){
+                return arr[10]+=2
+            }
+            if(21<=i && i<=30){
+                return arr[10]-=1
+            }
+        })
+        console.log(arr1)
+</script>

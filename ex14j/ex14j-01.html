@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콜백함수 연습하기</title>
+    <script>
+        function ror(heroname,level,callback){
+            if(level>=6){
+        document.write(`<h1>${heroname}님께서 궁극기를 시전하였습니다.</h1>`)
+            callback(level)
+        }
+        else{document.write(`<h1>${heroname}님께서 평타를 때립니다.</h1>`)
+        }
+    }
+    function fire(ff){
+    for(let i=1;i<ff;i++){
+    document.write(`{${i}번째 파이어를 ${i}게 던집니다}<hr>`)
+}
+}
+//aa자리에 level입력받을예정
+    function ice(aa){
+        for(let i=1;i<aa;i++){ //1~aa까지 밑을 반복
+    document.write(`{${i}번째 얼음송곳을 ${i*aa}개 던집니다}<hr>`)
+}
+}   
+    function slow(kk){
+        for(let i=1;i<kk;i++){
+            document.write(`{${i}번째 때려서 ${i*5}% 느려집니다}<hr>`)
+        }
+
+    }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

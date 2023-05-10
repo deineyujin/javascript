@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열문제map()</title>
+    <script>
+        const arr = Array(200).fill(0).map(function(v,i,a){
+            return i
+        })
+        console.log(arr)
+
+
+    //    축약형
+    //     const arr = Array(200).fill(0).map((v,i)=>{i+1)
+    //     console.log(arr)
+
+
+    let ct=0;
+    const arr = Array(200).fill(0).map(function(_,i)=>{  //i만 표현, v대신 언더바
+        if(i<=77)ct+=1     
+        if(i>=77 && i<=166)ct+=2
+        if(i>166)ct=ct-1 //마지막에 else로 대체가능
+        return ct
+        })
+        console.log(arr)
+//i는 기억하는 것이아니라 진행상황 , ct라는 기억공간이 필요
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

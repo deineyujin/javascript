@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구버전 전개연산자 구현</title>
+    <script>
+        // function sample(...items){
+        //     console.log(items)
+        // }
+        // sample(1,2,3,4,5)
+        // function sam(items){
+        //     console.log(sam)
+        // }
+
+        const arr = [1,2,3,4]
+        //Math.max(...arr)
+        console.log(  Math.max.apply(null,arr))    //max에는 배열이 들어가지 않으며, apply로 배열을 풀어야 한다. / .은 기능을 나타내며, 이 경우 기능들이 연달아 이어지는 것
+        console.log(sam.apply(null,arr))  
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
