@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프로토타입연습</title>
+    <script>
+      String.prototype.ck = function (data) {
+        return this.indexOf(data) >=0
+        return` $this.indexOf(data) +1번째있어요` : "없네요"
+        :"없네요..";
+      }; ///양수면 有, 음수면 無
+      const str = "안녕하세요";
+      console.log(str.ck("하세"));
+      console.log(str.ck("몰라"));
+    </script>
+  </head>
+  <body></body>
+</html>
